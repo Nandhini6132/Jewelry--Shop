@@ -1,0 +1,508 @@
+*::selection {
+  background-color: #c29958;
+  color: wheat;
+}
+.animate__zoomIn {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: animate__zoomIn;
+  animation-duration: 2s;
+}
+
+.animate__fadeIn {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: animate__fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animate__fadeInRight {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: animate__fadeInRight;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animate__slideInUp {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: animate__slideInUp;
+  animation-duration: 2s;
+}
+
+.animate__shakeX {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: animate__shakeX;
+  animation-duration: 2s;
+}
+
+.animate_animated .animate_flash {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__flash {
+  --animate-duration: 2s;
+}
+/* navigation */
+/* .active{
+  color: #c29958 !important;
+} */
+
+.dropdown-menu .dropdown-item:hover::before {
+  content: "--" !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #c29958 !important;
+  background-color: transparent;
+}
+
+.dropdown ul {
+  border: none;
+}
+.dropdown ul li hr {
+  border-style: dashed;
+}
+
+/* Navigation*/
+/* .dropdown-menu .dropdown-item:hover::before{
+  content: '-' !important;
+}
+
+.dropdown-menu .dropdown-item:hover{
+  color: #c29958 !important;
+  background-color: transparent;
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 9999;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search {
+  position: relative;
+  top: 20px;
+  left: 32px;
+}
+
+.form-control {
+  width: auto;
+  border-radius: 20px;
+}
+
+.caption1 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+.caption3 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+.caption2 {
+  position: absolute;
+  right: 20%;
+  top: 30%;
+}
+.carousel-item h1 {
+  font-size: 70px;
+}
+
+.carousel-item p {
+  font-size: 20px;
+}
+
+.btn1 {
+  border-radius: 25px;
+  background-color: rgb(172, 172, 46);
+  color: white;
+}
+.btn1:hover{
+   background-color: rgb(172, 172, 46);;
+}
+
+/* shop by category */
+
+.category {
+  margin-top: 8rem;
+}
+
+.description {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+}
+.description h6{
+  color:rgb(190, 165, 24);
+   animation: blink 1s ease-in;
+   animation-iteration-count: infinite;
+  
+}
+
+@keyframes blink {
+    0%{
+      opacity: 0.3;
+      
+    }
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 1;
+      
+    }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.animate-text {
+  background: linear-gradient(90deg, #c29958, black, #c29958);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  animation: animation 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(255, 255, 255, 0);
+}
+
+@keyframes animation {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.products li a {
+  text-decoration: none;
+}
+.products li {
+  list-style: none;
+  display: inline-block;
+}
+
+.angle{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Slider */
+
+.slick-slider .element {
+  display: inline-block;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+}
+.small {
+  font-size: 14px;
+}
+.card {
+  border: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: gray;
+  /* -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale; */
+}
+.slick-prev,
+.slick-next {
+  background-color: white;
+}
+
+.product-badge {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+.button-div {
+  position: absolute;
+  left: 20%;
+  top: 52%;
+  border-radius: 25px;
+  visibility: hidden;
+}
+.button-cart {
+  background-color: rgb(156, 155, 155);
+  border-radius: 25px;
+}
+
+.card:hover .button-div {
+  visibility: visible;
+  background-color: #c29958;
+  animation: card-hover 0.2s linear;
+  animation-fill-mode: forwards;
+}
+
+.three-icons {
+  /* visibility: hidden; */
+  display: none;
+  position: absolute;
+  left: 85%;
+  top: 3%;
+}
+
+.card:hover .three-icons {
+  display: block;
+  animation: icon-hover 0.2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes card-hover {
+  0% {
+    top: 52%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes icon-hover {
+  0% {
+    left: 88%;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+/* BIG .slick-slider */
+/* Slider */
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+.slide h3 {
+  position: absolute;
+  bottom: 10%;
+  margin-left: 20px;
+}
+
+.element .card img:hover {
+  content: url(../IMAGES/bracelet.webp);
+}
+
+.element .card img {
+  width: 256px;
+  height: 256px;
+}
+.card {
+  margin: 0 auto;
+}
+
+.slick-slider-3 .slick-next {
+  /* top: -20px;
+ right: -9px; */
+  visibility: hidden;
+}
+
+.slick-slider-3 .slick-prev {
+  /* top: -20px;
+  left: 85%; */
+  visibility: hidden;
+}
+/* blog */
+.blog:hover .blog1 {
+  transform: scale(1.006) !important;
+  opacity: 0.8;
+}
+.blog-text:hover {
+  color: #c29958 !important;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(148, 147, 147);
+  padding: 5% 0;
+}
+
+.contact i,
+p {
+  cursor: pointer;
+}
+.contact p:hover i {
+  color: whitesmoke !important;
+}
+
+.info p {
+  cursor: pointer;
+}
+
+.follow i {
+  cursor: pointer;
+}
+
+.follow i:hover {
+  color: white !important;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+  /* position: relative; */
+}
+
+.footer span {
+  position: absolute;
+  right: 22%;
+  top: 25%;
+  color: #80591b;
+  font-weight: 700;
+}
+.cust-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .cust-nav {
+    display: block;
+  }
+}
